@@ -77,7 +77,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'klaviyo-python-sdk-beta/0.0.0.20220711'
+        self.user_agent = 'klaviyo-python-sdk-beta/0.0.1.20220907'
 
     def __enter__(self):
         return self
