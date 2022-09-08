@@ -66,7 +66,7 @@ This SDK is organized into the following resources:
 
 ## pip
 
-You can install this library using [`pip`](https://pypi.org/project/klaviyo-sdk-beta/).
+You can install this library using [our pip package here](https://pypi.org/project/klaviyo-sdk-beta/).
 
 Depending on your system configuration, you will need to run *one* of the following shell commands:
 
