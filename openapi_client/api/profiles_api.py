@@ -877,9 +877,9 @@ class ProfilesApi(object):
             id (str): 
 
         Keyword Args:
-            fields_list ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_list ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
@@ -964,7 +964,7 @@ class ProfilesApi(object):
             profile_id (str): 
 
         Keyword Args:
-            fields_list ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_list ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -1135,7 +1135,7 @@ class ProfilesApi(object):
             profile_id (str): 
 
         Keyword Args:
-            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -1216,7 +1216,7 @@ class ProfilesApi(object):
 
 
         Keyword Args:
-            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`id`: `any`, `equals`<br>`email`: `any`, `equals`<br>`phone_number`: `any`, `equals`<br>`external_id`: `any`, `equals`<br>`anonymous_id`: `any`, `equals`<br>`_kx`: `equals`<br>`created`: `greater-than`, `less-than`<br>`updated`: `greater-than`, `less-than`. [optional]
             page_cursor (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination. [optional]
             sort (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting. [optional]

@@ -671,9 +671,9 @@ class EventsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_event ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_event ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
@@ -758,7 +758,7 @@ class EventsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -842,7 +842,7 @@ class EventsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -1010,9 +1010,9 @@ class EventsApi(object):
 
 
         Keyword Args:
-            fields_event ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_event ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_profile ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`metric_id`: `equals`<br>`datetime`: `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`<br>`timestamp`: `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             page_cursor (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination. [optional]

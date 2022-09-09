@@ -236,7 +236,7 @@ class MetricsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -309,7 +309,7 @@ class MetricsApi(object):
     ):
         """Get Metric Aggregate  # noqa: E501
 
-        Query & aggregate event data associated with specific metrics, optionally filtering & grouping results by time, event or profile dimensions. </br> This endpoint lets you form queries in your `POST` request body rather than query parameters for simpler query syntax. </br> </br> Request body parameters (all nested under `attributes`): * `return_fields`: Provide fields to limit the returned data * `sort`: Provide a sort key (e.g. `\"-timestamp\"`) * `page_cursor`: Optional pagination cursor to iterate over large result sets * `measurement`: Measurement key, e.g `\"sum\"`, `\"sum_value\"`, `\"count\"` * `interval`: Aggregation interval, e.g. `\"hour\"`,`\"day\"`,`\"week\"`,`\"month\"` * `limit`: Limit the number of returned results * `by`: Optional attribute(s) used for grouping by the aggregation function * `metric_id`: The metric ID used in the aggregation * `filters`: List of filters, must include time range using ISO 8601 format (`\"YYYY-MM-DDTHH:MM:SS.mmmmmm\"`) * `timezone`: The timezone used for processing the query </br> </br> For a comprehensive list of native Klaviyo metrics and their associated attributes for grouping & filtering, please refer to our [Native Klaviyo Metrics & Attributes](https://developers.klaviyo.com/en/reference/klaviyo-metrics-attributes) guide for our V1 APIs.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Query & aggregate event data associated with specific metrics, optionally filtering & grouping results by time, event or profile dimensions. </br> This endpoint lets you form queries in your `POST` request body rather than query parameters for simpler query syntax. </br> **Request body parameters** (all nested under `attributes`): * `return_fields`: Provide fields to limit the returned data * `sort`: Provide a sort key (e.g. `\"-timestamp\"`) * `page_cursor`: Optional pagination cursor to iterate over large result sets * `measurement`: Measurement key, e.g `\"sum\"`, `\"sum_value\"`, `\"count\"` * `interval`: Aggregation interval, e.g. `\"hour\"`,`\"day\"`,`\"week\"`,`\"month\"` * `page_size`: Limit the number of returned results * `by`: Optional attribute(s) used for grouping by the aggregation function * `metric_id`: The metric ID used in the aggregation * `filter`: List of filters, must include time range using ISO 8601 format (`\"YYYY-MM-DDTHH:MM:SS.mmmmmm\"`) * `timezone`: The timezone used for processing the query </br> For a comprehensive list of native Klaviyo metrics and their associated attributes for grouping & filtering, please refer to our [Native Klaviyo Metrics & Attributes](https://developers.klaviyo.com/en/reference/klaviyo-metrics-attributes) guide for our V1 APIs.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -400,7 +400,7 @@ class MetricsApi(object):
 
 
         Keyword Args:
-            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_metric ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             page_cursor (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.

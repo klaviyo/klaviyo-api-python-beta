@@ -373,7 +373,7 @@ class SegmentsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -627,7 +627,7 @@ class SegmentsApi(object):
 
 
         Keyword Args:
-            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_segment ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`name`: `any`, `equals`<br>`created`: `greater-than`<br>`updated`: `greater-than`. [optional]
             page_cursor (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination. [optional]
             _return_http_data_only (bool): response data without head status

@@ -1114,8 +1114,8 @@ class FlowsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
@@ -1200,9 +1200,9 @@ class FlowsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
@@ -1287,7 +1287,7 @@ class FlowsApi(object):
             action_id (str): 
 
         Keyword Args:
-            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -1371,7 +1371,7 @@ class FlowsApi(object):
             action_id (str): 
 
         Keyword Args:
-            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`id`: `any`<br>`name`: `contains`, `ends-with`, `equals`, `starts-with`<br>`created`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`<br>`updated`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`. [optional]
             sort (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting. [optional]
             _return_http_data_only (bool): response data without head status
@@ -1546,7 +1546,7 @@ class FlowsApi(object):
             flow_id (str): 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`id`: `any`<br>`action_type`: `any`, `equals`<br>`status`: `equals`<br>`created`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`<br>`updated`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`. [optional]
             sort (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting. [optional]
             _return_http_data_only (bool): response data without head status
@@ -1632,8 +1632,8 @@ class FlowsApi(object):
             id (str): 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_flow_message ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
@@ -1718,7 +1718,7 @@ class FlowsApi(object):
             message_id (str): 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             _return_http_data_only (bool): response data without head status
                 code and headers. Default is True.
             _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -1975,8 +1975,8 @@ class FlowsApi(object):
 
 
         Keyword Args:
-            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
-            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering. [optional]
+            fields_flow_action ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
+            fields_flow ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets. [optional]
             filter (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering<br>Allowed field(s)/operator(s):<br>`id`: `any`<br>`name`: `contains`, `ends-with`, `equals`, `starts-with`<br>`status`: `equals`<br>`archived`: `equals`<br>`created`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`<br>`updated`: `equals`, `greater-or-equal`, `greater-than`, `less-or-equal`, `less-than`<br>`trigger_type`: `equals`. [optional]
             include ([str]): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships. [optional]
             sort (str): For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting. [optional]

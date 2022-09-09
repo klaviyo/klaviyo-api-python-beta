@@ -91,7 +91,6 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
         """
         lazy_import()
         return {
-            'id': (str,),  # noqa: E501
             'type': (str,),  # noqa: E501
             'attributes': (MetricAggregateQueryAsSubResourceAttributes,),  # noqa: E501
         }
@@ -102,7 +101,6 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
 
 
     attribute_map = {
-        'id': 'id',  # noqa: E501
         'type': 'type',  # noqa: E501
         'attributes': 'attributes',  # noqa: E501
     }
@@ -114,11 +112,10 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, id, attributes, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, attributes, *args, **kwargs):  # noqa: E501
         """MetricAggregateQueryAsSubResource - a model defined in OpenAPI
 
         Args:
-            id (str):
             attributes (MetricAggregateQueryAsSubResourceAttributes):
 
         Keyword Args:
@@ -185,7 +182,6 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
-        self.id = id
         self.type = type
         self.attributes = attributes
         for var_name, var_value in kwargs.items():
@@ -208,11 +204,10 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, attributes, *args, **kwargs):  # noqa: E501
+    def __init__(self, attributes, *args, **kwargs):  # noqa: E501
         """MetricAggregateQueryAsSubResource - a model defined in OpenAPI
 
         Args:
-            id (str):
             attributes (MetricAggregateQueryAsSubResourceAttributes):
 
         Keyword Args:
@@ -277,7 +272,6 @@ class MetricAggregateQueryAsSubResource(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
-        self.id = id
         self.type = type
         self.attributes = attributes
         for var_name, var_value in kwargs.items():
