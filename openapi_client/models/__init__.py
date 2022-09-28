@@ -95,6 +95,7 @@ from openapi_client.model.included_lists import IncludedLists
 from openapi_client.model.included_lists_attributes import IncludedListsAttributes
 from openapi_client.model.included_metrics import IncludedMetrics
 from openapi_client.model.included_metrics_attributes import IncludedMetricsAttributes
+from openapi_client.model.included_profile import IncludedProfile
 from openapi_client.model.included_profiles import IncludedProfiles
 from openapi_client.model.included_profiles_attributes import IncludedProfilesAttributes
 from openapi_client.model.included_segments import IncludedSegments

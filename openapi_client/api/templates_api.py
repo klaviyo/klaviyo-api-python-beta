@@ -481,7 +481,7 @@ class TemplatesApi(object):
     ):
         """Create Template  # noqa: E501
 
-        Create a CODE template. Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Create a CODE template. Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -565,7 +565,7 @@ class TemplatesApi(object):
     ):
         """Create Template Clone  # noqa: E501
 
-        Clone a single template by ID Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Clone a single template by ID. Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -652,7 +652,7 @@ class TemplatesApi(object):
     ):
         """Create Template Render  # noqa: E501
 
-        Render a single template by ID Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Render a single template by ID. Sparse fields can be provided to return a subset of template fields. Requires a JSON stringified Context object which is a dictionary mapping any Django variable names used in the template to a value.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Templates Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -738,7 +738,7 @@ class TemplatesApi(object):
     ):
         """Delete Template  # noqa: E501
 
-        Delete a single template by ID<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Delete a single template by ID<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -821,7 +821,7 @@ class TemplatesApi(object):
     ):
         """Get Template  # noqa: E501
 
-        Get a single template by ID. Returns a full template (or 404 if not found). Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Get a single template by ID. Returns a full template (or 404 if not found). Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -904,7 +904,7 @@ class TemplatesApi(object):
     ):
         """Get Templates  # noqa: E501
 
-        Return a list of templates for the company, optionally filtered and sorted. If unfiltered, returns all templates for the company. Filters can be provided to narrow the results. Sort can be provided to order the results. Sparse fields can be provided to return a subset of templates fields. Pagination is available to load additional results.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Return a list of templates for the company, optionally filtered and sorted. If unfiltered, returns all templates for the company. Filters can be provided to narrow the results. Sort can be provided to order the results. Sparse fields can be provided to return a subset of templates fields. Pagination is available to load additional results.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -988,7 +988,7 @@ class TemplatesApi(object):
     ):
         """Update Template  # noqa: E501
 
-        Update a single template by ID. Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Update a single template by ID. Sparse fields can be provided to return a subset of template fields.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Templates Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

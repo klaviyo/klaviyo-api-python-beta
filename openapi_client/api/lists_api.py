@@ -639,7 +639,7 @@ class ListsApi(object):
     ):
         """Create List  # noqa: E501
 
-        Create a list<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Create a list<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -724,7 +724,7 @@ class ListsApi(object):
     ):
         """Add Profile to List  # noqa: E501
 
-        Add profiles to a list  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write` `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -813,7 +813,7 @@ class ListsApi(object):
     ):
         """Delete List  # noqa: E501
 
-        Delete a list<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Delete a list<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -898,7 +898,7 @@ class ListsApi(object):
     ):
         """Remove Profile from List  # noqa: E501
 
-        Removes profiles from a list  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write` `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -987,7 +987,7 @@ class ListsApi(object):
     ):
         """Get List  # noqa: E501
 
-        Returns a specific list in an account based on a required LIST_ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Returns a specific list in an account based on a required LIST_ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1071,7 +1071,7 @@ class ListsApi(object):
     ):
         """Get List Profiles  # noqa: E501
 
-        Returns a list of all profiles inside a given list, that can optionally be filtered by email and/or phone number.  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Read` `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1158,7 +1158,7 @@ class ListsApi(object):
     ):
         """Get List Profile Relationships  # noqa: E501
 
-        Returns a list of profile membership relationships for a given list  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Read` `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1244,7 +1244,7 @@ class ListsApi(object):
     ):
         """Get Lists  # noqa: E501
 
-        Returns some or all lists in an account based on [optional] filters<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Returns some or all lists in an account based on [optional] filters<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1327,7 +1327,7 @@ class ListsApi(object):
     ):
         """Update List  # noqa: E501
 
-        Update list name or other attributes.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Update list name or other attributes.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `List Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

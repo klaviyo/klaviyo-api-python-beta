@@ -3880,7 +3880,7 @@ class CatalogsApi(object):
     ):
         """Create Catalog Category  # noqa: E501
 
-        Create a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Create a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -3965,7 +3965,7 @@ class CatalogsApi(object):
     ):
         """Create Catalog Category Relationships  # noqa: E501
 
-        Creates new item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Creates new item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4054,7 +4054,7 @@ class CatalogsApi(object):
     ):
         """Create Catalog Item  # noqa: E501
 
-        Create an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Create an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4139,7 +4139,7 @@ class CatalogsApi(object):
     ):
         """Create Catalog Item Relationships  # noqa: E501
 
-        Creates new category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Creates new category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4228,7 +4228,7 @@ class CatalogsApi(object):
     ):
         """Create Catalog Variant  # noqa: E501
 
-        Create a variant for an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Create a variant for an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4311,7 +4311,7 @@ class CatalogsApi(object):
     ):
         """Delete Catalog Category  # noqa: E501
 
-        Delete a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Delete a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4396,7 +4396,7 @@ class CatalogsApi(object):
     ):
         """Delete Catalog Category Relationships  # noqa: E501
 
-        Deletes the specified item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Deletes the specified item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4485,7 +4485,7 @@ class CatalogsApi(object):
     ):
         """Delete Catalog Item  # noqa: E501
 
-        Delete an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Delete an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4570,7 +4570,7 @@ class CatalogsApi(object):
     ):
         """Delete Catalog Item Relationships  # noqa: E501
 
-        Deletes the specified category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Deletes the specified category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4659,7 +4659,7 @@ class CatalogsApi(object):
     ):
         """Delete Catalog Variant  # noqa: E501
 
-        Delete a variant<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Delete a variant<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4741,7 +4741,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Categories  # noqa: E501
 
-        Gets a list of categories for the company. Sparsefieldsets can be utilized to request specific fields. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Gets a list of categories for the company. Sparsefieldsets can be utilized to request specific fields. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4824,7 +4824,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Category  # noqa: E501
 
-        Get a category by id<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a category by id<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4908,7 +4908,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Category Items  # noqa: E501
 
-        Gets a list of items that are in the given category. Sparsefieldsets can be utilized to request specific fields. Include can be used to get the related variants. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination  # noqa: E501
+        Gets a list of items that are in the given category. Sparsefieldsets can be utilized to request specific fields. Include can be used to get the related variants. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -4998,7 +4998,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Category Relationships  # noqa: E501
 
-        Returns a list of item relationships for a given category  # noqa: E501
+        Gets a list of items that are in the given category. Sparse fieldsets can be utilized to request specific fields. Include can be used to get the related variants. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5085,7 +5085,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Item  # noqa: E501
 
-        Get an item by id. Sparsefieldsets can be utilized to request specific fields. Include can be used to get the related variants as well<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get an item by id. Sparsefieldsets can be utilized to request specific fields. Include can be used to get the related variants as well<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5171,7 +5171,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Item Categories  # noqa: E501
 
-        Gets a list of categories that the item is in. Sparse fieldsets can be utilized to narrow down the fields that are returned. Each request will return a max of 100 items, which can be paginated through cursor pagination  # noqa: E501
+        Gets a list of categories that the item is in. Sparse fieldsets can be utilized to narrow down the fields that  are returned. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5259,7 +5259,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Item Relationships  # noqa: E501
 
-        Returns a list of category relationships for a given item  # noqa: E501
+        Gets a list of categories that the item is in. Sparse fieldsets can be utilized to narrow down the fields that are returned. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5346,7 +5346,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Item Variants  # noqa: E501
 
-        Gets a list of all variants that belong to the item. Sparse fieldsets can be utilized to narrow down the fields to be returned. A maximum of 100 variants will be returned  # noqa: E501
+        Gets a list of variants for the company. Sparsefieldsets can be utilized to request specific fields. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5432,7 +5432,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Items  # noqa: E501
 
-        Gets a list of items for the company. Sparse fieldsets can be utilized to request specific fields. Include can be used to get the related variants. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Gets a list of items for the company. Sparse fieldsets can be utilized to request specific fields. Include can be used to get the related variants. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5517,7 +5517,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Variant  # noqa: E501
 
-        Get a variant by id<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a variant by id<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5600,7 +5600,7 @@ class CatalogsApi(object):
     ):
         """Get Catalog Variants  # noqa: E501
 
-        Gets a list of variants for the company. Sparsefieldsets can be utilized to request specific fields. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Gets a list of variants for the company. Sparsefieldsets can be utilized to request specific fields. The items can be sorted by id in ascending and descending order. Each request will return a max of 100 items, which can be paginated through cursor pagination<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5683,7 +5683,7 @@ class CatalogsApi(object):
     ):
         """Get Create Categories Job  # noqa: E501
 
-        Get a catalog category create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog category create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5768,7 +5768,7 @@ class CatalogsApi(object):
     ):
         """Get Create Categories Jobs  # noqa: E501
 
-        Get a list of catalog category create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog category create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5850,7 +5850,7 @@ class CatalogsApi(object):
     ):
         """Get Create Items Job  # noqa: E501
 
-        Get a catalog item create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog item create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -5935,7 +5935,7 @@ class CatalogsApi(object):
     ):
         """Get Create Items Jobs  # noqa: E501
 
-        Get a list of catalog item create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog item create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6017,7 +6017,7 @@ class CatalogsApi(object):
     ):
         """Get Create Variants Job  # noqa: E501
 
-        Get a catalog variant create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog variant create job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6102,7 +6102,7 @@ class CatalogsApi(object):
     ):
         """Get Create Variants Jobs  # noqa: E501
 
-        Get a list of catalog variant create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog variant create jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6184,7 +6184,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Categories Job  # noqa: E501
 
-        Get a catalog category delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog category delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6267,7 +6267,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Categories Jobs  # noqa: E501
 
-        Get a list of catalog category delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog category delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6349,7 +6349,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Items Job  # noqa: E501
 
-        Get a catalog item delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog item delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6432,7 +6432,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Items Jobs  # noqa: E501
 
-        Get a list of catalog item delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog item delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6514,7 +6514,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Variants Job  # noqa: E501
 
-        Get a catalog variant delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog variant delete job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6597,7 +6597,7 @@ class CatalogsApi(object):
     ):
         """Get Delete Variants Jobs  # noqa: E501
 
-        Get a list of catalog variant delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog variant delete jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6679,7 +6679,7 @@ class CatalogsApi(object):
     ):
         """Get Update Categories Job  # noqa: E501
 
-        Get a catalog category update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog category update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6764,7 +6764,7 @@ class CatalogsApi(object):
     ):
         """Get Update Categories Jobs  # noqa: E501
 
-        Get a list of catalog category updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog category updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6846,7 +6846,7 @@ class CatalogsApi(object):
     ):
         """Get Update Items Job  # noqa: E501
 
-        Get a catalog item update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog item update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -6931,7 +6931,7 @@ class CatalogsApi(object):
     ):
         """Get Update Items Jobs  # noqa: E501
 
-        Get a list of catalog item updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog item updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7013,7 +7013,7 @@ class CatalogsApi(object):
     ):
         """Get Update Variants Job  # noqa: E501
 
-        Get a catalog variant update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a catalog variant update job<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7098,7 +7098,7 @@ class CatalogsApi(object):
     ):
         """Get Update Variants Jobs  # noqa: E501
 
-        Get a list of catalog variant updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of catalog variant updates jobs<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Catalogs Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7180,7 +7180,7 @@ class CatalogsApi(object):
     ):
         """Spawn Create Categories Job  # noqa: E501
 
-        Spawn a catalog category create job. This will create a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog category create job. This will create a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7263,7 +7263,7 @@ class CatalogsApi(object):
     ):
         """Spawn Create Items Job  # noqa: E501
 
-        Spawn a catalog item create job. This will create a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog item create job. This will create a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7346,7 +7346,7 @@ class CatalogsApi(object):
     ):
         """Spawn Create Variants Job  # noqa: E501
 
-        Spawn a catalog variant create job. This will create a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog variant create job. This will create a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7429,7 +7429,7 @@ class CatalogsApi(object):
     ):
         """Spawn Delete Categories Job  # noqa: E501
 
-        Spawn a catalog category delete job. This will delete a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog category delete job. This will delete a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7512,7 +7512,7 @@ class CatalogsApi(object):
     ):
         """Spawn Delete Items Job  # noqa: E501
 
-        Spawn a catalog item delete job. This will delete a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog item delete job. This will delete a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7595,7 +7595,7 @@ class CatalogsApi(object):
     ):
         """Spawn Delete Variants Job  # noqa: E501
 
-        Spawn a catalog variant delete job. This will delete a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog variant delete job. This will delete a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7678,7 +7678,7 @@ class CatalogsApi(object):
     ):
         """Spawn Update Categories Job  # noqa: E501
 
-        Spawn a catalog category update job. This will update a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog category update job. This will update a batch of catalog categories<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7761,7 +7761,7 @@ class CatalogsApi(object):
     ):
         """Spawn Update Items Job  # noqa: E501
 
-        Spawn a catalog item update job. This will update a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog item update job. This will update a batch of catalog items<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7844,7 +7844,7 @@ class CatalogsApi(object):
     ):
         """Spawn Update Variants Job  # noqa: E501
 
-        Spawn a catalog variant update job. This will update a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Spawn a catalog variant update job. This will update a batch of catalog variants<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -7928,7 +7928,7 @@ class CatalogsApi(object):
     ):
         """Update Catalog Category  # noqa: E501
 
-        Update a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Update a category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -8016,7 +8016,7 @@ class CatalogsApi(object):
     ):
         """Update Catalog Category Relationships  # noqa: E501
 
-        Updates the item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Updates the item relationships for a given category<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -8106,7 +8106,7 @@ class CatalogsApi(object):
     ):
         """Update Catalog Item  # noqa: E501
 
-        Update an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Update an item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -8194,7 +8194,7 @@ class CatalogsApi(object):
     ):
         """Update Catalog Item Relationships  # noqa: E501
 
-        Updates the category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Updates the category relationships for a given item<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -8284,7 +8284,7 @@ class CatalogsApi(object):
     ):
         """Update Catalog Variant  # noqa: E501
 
-        Update a variant<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Update a variant<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Catalogs Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

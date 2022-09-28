@@ -41,7 +41,7 @@ class ClientApi(object):
         self.api_client = api_client
         self.create_client_event_endpoint = _Endpoint(
             settings={
-                'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
+                'response_type': None,
                 'auth': [],
                 'endpoint_path': '/client/events/',
                 'operation_id': 'create_client_event',
@@ -97,7 +97,7 @@ class ClientApi(object):
         )
         self.create_client_profile_endpoint = _Endpoint(
             settings={
-                'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
+                'response_type': None,
                 'auth': [],
                 'endpoint_path': '/client/profiles/',
                 'operation_id': 'create_client_profile',
@@ -153,7 +153,7 @@ class ClientApi(object):
         )
         self.create_client_subscription_endpoint = _Endpoint(
             settings={
-                'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
+                'response_type': None,
                 'auth': [],
                 'endpoint_path': '/client/subscriptions/',
                 'operation_id': 'create_client_subscription',
@@ -216,7 +216,7 @@ class ClientApi(object):
     ):
         """Create Client Event  # noqa: E501
 
-        \"Enqueue an event to be created. This creates an event asynchronously. On successful queueing, this returns a 202 status code with an empty body. A sucessful response does not guarantee the event was created successfully. If the event is malformed or does not abide by limits, the event will be rejected qith status code of 400.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        \"Enqueue an event to be created. This creates an event asynchronously. On successful queueing, this returns a 202 status code with an empty body. A sucessful response does not guarantee the event was created successfully. If the event is malformed or does not abide by limits, the event will be rejected with status code of 400.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -260,7 +260,7 @@ class ClientApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            {str: (bool, date, datetime, dict, float, int, list, str, none_type)}
+            None
                 If the method is called asynchronously, returns the request
                 thread.
         """
@@ -303,7 +303,7 @@ class ClientApi(object):
     ):
         """Create Client Profile  # noqa: E501
 
-        Create/Update Profiles objects (replaces /identify)<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Create/Update Profiles objects (replaces /identify)<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -347,7 +347,7 @@ class ClientApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            {str: (bool, date, datetime, dict, float, int, list, str, none_type)}
+            None
                 If the method is called asynchronously, returns the request
                 thread.
         """
@@ -390,7 +390,7 @@ class ClientApi(object):
     ):
         """Create Client Subscription  # noqa: E501
 
-        Create a new subscription for the given list<br><br>*Rate limits*:<br>Burst: `100/s`<br>Steady: `100/m`  # noqa: E501
+        Create a new subscription for the given list and channel (Email or SMS)<br><br>*Rate limits*:<br>Burst: `100/s`<br>Steady: `100/m`  **Scopes:** `Subscriptions Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -399,7 +399,7 @@ class ClientApi(object):
 
         Args:
             company_id (str): 
-            onsite_subscription_create_query (OnsiteSubscriptionCreateQuery):
+            onsite_subscription_create_query (OnsiteSubscriptionCreateQuery): Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object.
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -434,7 +434,7 @@ class ClientApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            {str: (bool, date, datetime, dict, float, int, list, str, none_type)}
+            None
                 If the method is called asynchronously, returns the request
                 thread.
         """
