@@ -783,7 +783,7 @@ class ProfilesApi(object):
     ):
         """Create Profile  # noqa: E501
 
-        Create a profile<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Create a profile<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -866,7 +866,7 @@ class ProfilesApi(object):
     ):
         """Get Profile  # noqa: E501
 
-        Get a single profile by ID. Returns a full profile (or 404 if not found). Sparse fields can be provided to return a subset of profile fields. Includes can be provided to retrieve related resource data (lists and segment memberships)<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Get a single profile by ID. Returns a full profile (or 404 if not found). Sparse fields can be provided to return a subset of profile fields. Includes can be provided to retrieve related resource data (lists and segment memberships)<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -953,7 +953,7 @@ class ProfilesApi(object):
     ):
         """Get Profile Lists  # noqa: E501
 
-        Returns a list of list memberships for a given profile<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Returns a list of list memberships for a given profile<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `List Read` `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1038,7 +1038,7 @@ class ProfilesApi(object):
     ):
         """Get Profile Relationships  # noqa: E501
 
-        Returns a list of list or segment membership relationships for a given profile  # noqa: E501
+        Returns a list of segment membership relationships for a given profile<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Profiles Read` `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1124,7 +1124,7 @@ class ProfilesApi(object):
     ):
         """Get Profile Segments  # noqa: E501
 
-        Returns a list of segment memberships for a given profile<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Returns a list of segment memberships for a given profile<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Profiles Read` `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1207,7 +1207,7 @@ class ProfilesApi(object):
     ):
         """Get Profiles  # noqa: E501
 
-        Return a list of profiles for the company, optionally filtered and sorted. If unfiltered, returns all profiles for the company. Filters can be provided to narrow the results. Sort can be provided to order the results. Sparse fields can be provided to return a subset of profile fields. Pagination is available to load additional results.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Return a list of profiles for the company, optionally filtered and sorted. If unfiltered, returns all profiles for the company. Filters can be provided to narrow the results. Sort can be provided to order the results. Sparse fields can be provided to return a subset of profile fields. Pagination is available to load additional results.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1290,7 +1290,7 @@ class ProfilesApi(object):
     ):
         """Subscribe Profiles  # noqa: E501
 
-        Subscribes one or more profiles to marketing. Currently, supports email and SMS.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Subscribes one or more profiles to marketing. Currently, supports email and SMS.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `List Write` `Profiles Write` `Subscriptions Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1373,7 +1373,7 @@ class ProfilesApi(object):
     ):
         """Suppress Profiles  # noqa: E501
 
-        Suppresses one or more profiles from receiving marketing. Currently, supports email only.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Suppresses one or more profiles from receiving marketing. Currently, supports email only.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Profiles Write` `Subscriptions Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1456,7 +1456,7 @@ class ProfilesApi(object):
     ):
         """Unsubscribe Profiles  # noqa: E501
 
-        Unsubscribes one or more profiles from marketing. Currently, supports email and SMS.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Unsubscribes one or more profiles from marketing. Currently, supports email and SMS.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `List Write` `Profiles Write` `Subscriptions Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1539,7 +1539,7 @@ class ProfilesApi(object):
     ):
         """Unsuppress Profiles  # noqa: E501
 
-        Unsuppresses one or more profiles from receiving marketing. Currently, supports email only.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Unsuppresses one or more profiles from receiving marketing. Currently, supports email only.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Subscriptions Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1623,7 +1623,7 @@ class ProfilesApi(object):
     ):
         """Update Profile  # noqa: E501
 
-        Update a profile<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  # noqa: E501
+        Update a profile<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m`  **Scopes:** `Profiles Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

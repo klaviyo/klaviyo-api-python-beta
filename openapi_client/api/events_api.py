@@ -577,7 +577,7 @@ class EventsApi(object):
     ):
         """Create Event  # noqa: E501
 
-        Enqueue an event to be created. This creates an event asynchronously. On successful queueing, this returns a 202 status code with an empty body. A sucessful response does not guarantee the event was created successfully. If the event is malformed or does not abide by limits, the event will be rejected qith status code of 400.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Enqueue an event to be created. This creates an event asynchronously. Due to the asynchronous nature of the request, a successful response means that an event was validated & submitted for processing, but does not necessarily guarantee that it was processed.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -660,7 +660,7 @@ class EventsApi(object):
     ):
         """Get Event  # noqa: E501
 
-        Get a specific event by id<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Get a specific event by id<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Events Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -747,7 +747,7 @@ class EventsApi(object):
     ):
         """Get Event Metrics  # noqa: E501
 
-        Get a list of Metrics for an event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of Metrics for an event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Read` `Metrics Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -831,7 +831,7 @@ class EventsApi(object):
     ):
         """Get Event Profiles  # noqa: E501
 
-        Get a list of Profiles for an event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Get a list of Profiles for an event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Read` `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -916,7 +916,7 @@ class EventsApi(object):
     ):
         """Get Event Relationships  # noqa: E501
 
-        Returns metric or profile relationships for a given event  # noqa: E501
+        Get a list of Profiles related to an event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Read` `Profiles Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1001,7 +1001,7 @@ class EventsApi(object):
     ):
         """Get Events  # noqa: E501
 
-        Paginated range queries over event timelines for all company events or for a specific metric.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  # noqa: E501
+        Paginated range queries over event timelines for all company events or for a specific metric.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m`  **Scopes:** `Events Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

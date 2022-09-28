@@ -362,7 +362,7 @@ class SegmentsApi(object):
     ):
         """Get Segment  # noqa: E501
 
-        Get a single segment by ID<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Get a single segment by ID<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -446,7 +446,7 @@ class SegmentsApi(object):
     ):
         """Get Segment Profiles  # noqa: E501
 
-        Returns a list of all profiles inside a given segment, that can optionally be filtered by email, phone number, and push token.  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Profiles Read` `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -532,7 +532,7 @@ class SegmentsApi(object):
     ):
         """Get Segment Relationships  # noqa: E501
 
-        Returns a list of profile membership relationships for a given segment  # noqa: E501
+        *Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Profiles Read` `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -618,7 +618,7 @@ class SegmentsApi(object):
     ):
         """Get Segments  # noqa: E501
 
-        Get some or all segments.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Get some or all segments.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Segments Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -701,7 +701,7 @@ class SegmentsApi(object):
     ):
         """Update Segment  # noqa: E501
 
-        Update segment name or other attributes by ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  # noqa: E501
+        Update segment name or other attributes by ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Segments Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

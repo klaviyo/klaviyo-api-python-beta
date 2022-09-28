@@ -1103,7 +1103,7 @@ class FlowsApi(object):
     ):
         """Get Flow  # noqa: E501
 
-        Get a flow by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get a flow by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1189,7 +1189,7 @@ class FlowsApi(object):
     ):
         """Get Flow Action  # noqa: E501
 
-        Get a flow action by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get a flow action by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1276,7 +1276,7 @@ class FlowsApi(object):
     ):
         """Get Flow Action Flow  # noqa: E501
 
-        Get the flow for a flow action<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get the flow for a flow action<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1360,7 +1360,7 @@ class FlowsApi(object):
     ):
         """Get Flow Action Messages  # noqa: E501
 
-        Gets a list of flow messages that belong to the given flow action. Sparse fieldsets can be utilized to request specific fields. The flow messages can be sorted by id, name, created, and updated in ascending and descending order. Each request will return a max of 50 flow messages, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Gets a list of flow messages that belong to the given flow action. Sparse fieldsets can be utilized to request specific fields. The flow messages can be sorted by id, name, created, and updated in ascending and descending order. Each request will return a max of 50 flow messages, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1447,7 +1447,7 @@ class FlowsApi(object):
     ):
         """Get Flow Action Relationships  # noqa: E501
 
-        Gets a list of relationships for flow messages that belong to the given flow action. The flow message relationships can be sorted by id in ascending and descending order. Each request will return a max of 50 flow message relationships, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Gets a list of relationships for flow messages that belong to the given flow action. The flow message relationships can be sorted by id in ascending and descending order. Each request will return a max of 50 flow message relationships, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1535,7 +1535,7 @@ class FlowsApi(object):
     ):
         """Get Flow Flow Actions  # noqa: E501
 
-        Gets a list of flow actions that belong to the given flow. Sparse fieldsets can be utilized to request specific fields. The flow actions can be sorted by id, action_type, status, created, and updated in ascending and descending order. Each request will return a max of 50 flow actions, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Gets a list of flow actions that belong to the given flow. Sparse fieldsets can be utilized to request specific fields. The flow actions can be sorted by id, action_type, status, created, and updated in ascending and descending order. Each request will return a max of 50 flow actions, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1621,7 +1621,7 @@ class FlowsApi(object):
     ):
         """Get Flow Message  # noqa: E501
 
-        Get a flow message by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get a flow message by id<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1707,7 +1707,7 @@ class FlowsApi(object):
     ):
         """Get Flow Message Action  # noqa: E501
 
-        Get the flow action for a flow message<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get the flow action for a flow message<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1792,7 +1792,7 @@ class FlowsApi(object):
     ):
         """Get Flow Message Relationships  # noqa: E501
 
-        Get the relationship for a flow message's flow action<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Get the relationship for a flow message's flow action<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1879,7 +1879,7 @@ class FlowsApi(object):
     ):
         """Get Flow Relationships  # noqa: E501
 
-        Gets a list of relationships for flow actions that belong to the given flow. The flow action relationships can be sorted by id in ascending and descending order. Each request will return a max of 50 flow action relationships, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Gets a list of relationships for flow actions that belong to the given flow. The flow action relationships can be sorted by id in ascending and descending order. Each request will return a max of 50 flow action relationships, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -1966,7 +1966,7 @@ class FlowsApi(object):
     ):
         """Get Flows  # noqa: E501
 
-        Gets a list of flows for the company. Sparsefieldsets can be utilized to request specific fields. The flows can be sorted by id, name, status, trigger_type, created, updated in ascending and descending order. Each request will return a max of 50 flows, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Gets a list of flows for the company. Sparsefieldsets can be utilized to request specific fields. The flows can be sorted by id, name, status, trigger_type, created, updated in ascending and descending order. Each request will return a max of 50 flows, which can be paginated through offset pagination<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Read`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -2051,7 +2051,7 @@ class FlowsApi(object):
     ):
         """Update Flow  # noqa: E501
 
-        Update the status of a flow. As a side-effect, update the status of all actions belonging to that flow.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  # noqa: E501
+        Update the status of a flow. As a side-effect, update the status of all actions belonging to that flow.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m`  **Scopes:** `Flows Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
