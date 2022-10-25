@@ -8,9 +8,6 @@ You can read more about our SDK release history and support [here](https://devel
 
 For a comparison between our old and new APIs, check out [this guide](https://developers.klaviyo.com/en/docs/apis_comparison_chart).
 
-
-Please 
-
 # Klaviyo Python SDK (Beta API) (DEPRECATED)
 
 - SDK version: 1.0.3.20220907
