@@ -410,7 +410,7 @@ conf = openapi_client.Configuration(
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 2022-09-07.pre\n"\
-               "SDK Package Version: 1.0.2.20220907".\
+               "SDK Package Version: 1.0.3.20220907".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):

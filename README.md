@@ -1,12 +1,19 @@
-# Klaviyo Python SDK (Beta API)
+# BETA Program Closed - NEW APIs Now Available!
 
-- SDK version: 1.0.2.20220907
+NOTE: Our Beta Program is now closed, and all new endpoints are available to all accounts.
 
-## Signup Form for Beta API Access
+We recommend migrating over to our [newest SDK](https://github.com/klaviyo/klaviyo-api-python).
 
-This SDK is for our new API, currently in closed Beta.
+You can read more about our SDK release history and support [here](https://developers.klaviyo.com/en/docs/sdk_overview)
 
-To sign-up for the Beta and gain access to these gated endpoints, please fill out [this form](https://manage.kmail-lists.com/subscriptions/subscribe?a=9BX3wh&g=VSyTC6).
+For a comparison between our old and new APIs, check out [this guide](https://developers.klaviyo.com/en/docs/apis_comparison_chart).
+
+
+Please 
+
+# Klaviyo Python SDK (Beta API) (DEPRECATED)
+
+- SDK version: 1.0.3.20220907
 
 ## Helpful Resources
 
