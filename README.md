@@ -448,5 +448,5 @@ We stick to the following convention for parameters/arguments
 
 In the interest of making the SDK Pythonic, we made the following namespace changes *relative* to the language agnostic resources up top (API Docs, Guides, etc).
 
-- Resource names use Pascal case, (e.g. `Metrics`)
+- Resource names use Title + Snake Casing, (e.g. `Data_Privacy`)
 - function names and parameter names remain unchanged and use snake case (e.g. `get_metrics`, and `profile_id`)
