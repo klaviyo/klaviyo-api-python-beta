@@ -123,6 +123,24 @@ An `ApiException` consists of the following attributes:
 
 
 
+## Campaigns
+
+#### [Get Campaign Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_campaign_relationships)
+
+```python
+## Positional Arguments
+
+# id | str
+# related_resource | str
+
+klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource)
+```
+
+
+
+
+
+
 ## Data_Privacy
 
 #### [Create Data Privacy Deletion Job](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_data_privacy_deletion_job)
@@ -132,7 +150,7 @@ An `ApiException` consists of the following attributes:
 
 # body | dict
 
-klaviyo_beta.Data_Privacy.create_data_privacy_deletion_job(body);
+klaviyo_beta.Data_Privacy.create_data_privacy_deletion_job(body)
 ```
 
 
@@ -153,7 +171,7 @@ klaviyo_beta.Data_Privacy.create_data_privacy_deletion_job(body);
 
 # fields_tag | [str]
 
-klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag);
+klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag)
 ```
 
 
@@ -174,7 +192,7 @@ klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag);
 
 # fields_tag | [str]
 
-klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag);
+klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag)
 ```
 
 
@@ -195,7 +213,7 @@ klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag);
 
 # fields_tag | [str]
 
-klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag);
+klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag)
 ```
 
 
@@ -212,7 +230,7 @@ klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag);
 
 # body | dict
 
-klaviyo_beta.Tags.create_tag(body);
+klaviyo_beta.Tags.create_tag(body)
 ```
 
 
@@ -225,7 +243,7 @@ klaviyo_beta.Tags.create_tag(body);
 
 # body | dict
 
-klaviyo_beta.Tags.create_tag_group(body);
+klaviyo_beta.Tags.create_tag_group(body)
 ```
 
 
@@ -240,7 +258,7 @@ klaviyo_beta.Tags.create_tag_group(body);
 # related_resource | str
 # body | dict
 
-klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body);
+klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body)
 ```
 
 
@@ -253,7 +271,7 @@ klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body);
 
 # id | str
 
-klaviyo_beta.Tags.delete_tag(id);
+klaviyo_beta.Tags.delete_tag(id)
 ```
 
 
@@ -266,7 +284,7 @@ klaviyo_beta.Tags.delete_tag(id);
 
 # id | str
 
-klaviyo_beta.Tags.delete_tag_group(id);
+klaviyo_beta.Tags.delete_tag_group(id)
 ```
 
 
@@ -281,7 +299,7 @@ klaviyo_beta.Tags.delete_tag_group(id);
 # related_resource | str
 # body | dict
 
-klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body);
+klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body)
 ```
 
 
@@ -298,7 +316,7 @@ klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body);
 
 # fields_tag | [str]
 
-klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag);
+klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag)
 ```
 
 
@@ -315,7 +333,7 @@ klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag);
 
 # fields_tag_group | [str]
 
-klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group);
+klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group)
 ```
 
 
@@ -329,7 +347,7 @@ klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group);
 # id | str
 # related_resource | str
 
-klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource);
+klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource)
 ```
 
 
@@ -346,7 +364,7 @@ klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource);
 # page_cursor | str
 # sort | str
 
-klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filter, page_cursor=page_cursor, sort=sort);
+klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filter, page_cursor=page_cursor, sort=sort)
 ```
 
 
@@ -360,7 +378,7 @@ klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filte
 # id | str
 # related_resource | str
 
-klaviyo_beta.Tags.get_tag_relationships(id, related_resource);
+klaviyo_beta.Tags.get_tag_relationships(id, related_resource)
 ```
 
 
@@ -377,7 +395,7 @@ klaviyo_beta.Tags.get_tag_relationships(id, related_resource);
 # page_cursor | str
 # sort | str
 
-klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=page_cursor, sort=sort);
+klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=page_cursor, sort=sort)
 ```
 
 
@@ -391,7 +409,7 @@ klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=pag
 # id | str
 # body | dict
 
-klaviyo_beta.Tags.update_tag(id, body);
+klaviyo_beta.Tags.update_tag(id, body)
 ```
 
 
@@ -405,8 +423,9 @@ klaviyo_beta.Tags.update_tag(id, body);
 # id | str
 # body | dict
 
-klaviyo_beta.Tags.update_tag_group(id, body);
+klaviyo_beta.Tags.update_tag_group(id, body)
 ```
+
 
 
 
