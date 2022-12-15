@@ -132,7 +132,7 @@ An `ApiException` consists of the following attributes:
 
 # body | dict
 
-klaviyo_beta.Campaigns.create_campaign(body);
+klaviyo_beta.Campaigns.create_campaign(body)
 ```
 
 
@@ -145,7 +145,7 @@ klaviyo_beta.Campaigns.create_campaign(body);
 
 # body | dict
 
-klaviyo_beta.Campaigns.create_campaign_create_clone(body);
+klaviyo_beta.Campaigns.create_campaign_create_clone(body)
 ```
 
 
@@ -158,7 +158,7 @@ klaviyo_beta.Campaigns.create_campaign_create_clone(body);
 
 # body | dict
 
-klaviyo_beta.Campaigns.create_campaign_message_assign_template(body);
+klaviyo_beta.Campaigns.create_campaign_message_assign_template(body)
 ```
 
 
@@ -171,7 +171,7 @@ klaviyo_beta.Campaigns.create_campaign_message_assign_template(body);
 
 # body | dict
 
-klaviyo_beta.Campaigns.create_campaign_send_job(body);
+klaviyo_beta.Campaigns.create_campaign_send_job(body)
 ```
 
 
@@ -184,7 +184,7 @@ klaviyo_beta.Campaigns.create_campaign_send_job(body);
 
 # id | str
 
-klaviyo_beta.Campaigns.delete_campaign(id);
+klaviyo_beta.Campaigns.delete_campaign(id)
 ```
 
 
@@ -203,7 +203,7 @@ klaviyo_beta.Campaigns.delete_campaign(id);
 # fields_tag | [str]
 # include | [str]
 
-klaviyo_beta.Campaigns.get_campaign(id, fields_campaign=fields_campaign, fields_tag=fields_tag, include=include);
+klaviyo_beta.Campaigns.get_campaign(id, fields_campaign=fields_campaign, fields_tag=fields_tag, include=include)
 ```
 
 
@@ -220,7 +220,7 @@ klaviyo_beta.Campaigns.get_campaign(id, fields_campaign=fields_campaign, fields_
 
 # fields_campaign_message | [str]
 
-klaviyo_beta.Campaigns.get_campaign_message(id, fields_campaign_message=fields_campaign_message);
+klaviyo_beta.Campaigns.get_campaign_message(id, fields_campaign_message=fields_campaign_message)
 ```
 
 
@@ -234,7 +234,7 @@ klaviyo_beta.Campaigns.get_campaign_message(id, fields_campaign_message=fields_c
 # id | str
 # related_resource | str
 
-klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource);
+klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource)
 ```
 
 
@@ -251,7 +251,7 @@ klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource);
 
 # fields_campaign_send_job | [str]
 
-klaviyo_beta.Campaigns.get_campaign_send_job(id, fields_campaign_send_job=fields_campaign_send_job);
+klaviyo_beta.Campaigns.get_campaign_send_job(id, fields_campaign_send_job=fields_campaign_send_job)
 ```
 
 
@@ -269,7 +269,7 @@ klaviyo_beta.Campaigns.get_campaign_send_job(id, fields_campaign_send_job=fields
 # include | [str]
 # sort | str
 
-klaviyo_beta.Campaigns.get_campaigns(fields_campaign=fields_campaign, fields_tag=fields_tag, filter=filter, include=include, sort=sort);
+klaviyo_beta.Campaigns.get_campaigns(fields_campaign=fields_campaign, fields_tag=fields_tag, filter=filter, include=include, sort=sort)
 ```
 
 
@@ -283,7 +283,7 @@ klaviyo_beta.Campaigns.get_campaigns(fields_campaign=fields_campaign, fields_tag
 # id | str
 # body | dict
 
-klaviyo_beta.Campaigns.update_campaign(id, body);
+klaviyo_beta.Campaigns.update_campaign(id, body)
 ```
 
 
@@ -297,7 +297,7 @@ klaviyo_beta.Campaigns.update_campaign(id, body);
 # id | str
 # body | dict
 
-klaviyo_beta.Campaigns.update_campaign_message(id, body);
+klaviyo_beta.Campaigns.update_campaign_message(id, body)
 ```
 
 
@@ -311,7 +311,7 @@ klaviyo_beta.Campaigns.update_campaign_message(id, body);
 # id | str
 # body | dict
 
-klaviyo_beta.Campaigns.update_campaign_send_job(id, body);
+klaviyo_beta.Campaigns.update_campaign_send_job(id, body)
 ```
 
 
@@ -332,7 +332,7 @@ klaviyo_beta.Campaigns.update_campaign_send_job(id, body);
 
 # fields_tag | [str]
 
-klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag);
+klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag)
 ```
 
 
@@ -353,7 +353,7 @@ klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag);
 
 # fields_tag | [str]
 
-klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag);
+klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag)
 ```
 
 
@@ -374,7 +374,7 @@ klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag);
 
 # fields_tag | [str]
 
-klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag);
+klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag)
 ```
 
 
@@ -391,7 +391,7 @@ klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag);
 
 # body | dict
 
-klaviyo_beta.Tags.create_tag(body);
+klaviyo_beta.Tags.create_tag(body)
 ```
 
 
@@ -404,7 +404,7 @@ klaviyo_beta.Tags.create_tag(body);
 
 # body | dict
 
-klaviyo_beta.Tags.create_tag_group(body);
+klaviyo_beta.Tags.create_tag_group(body)
 ```
 
 
@@ -419,7 +419,7 @@ klaviyo_beta.Tags.create_tag_group(body);
 # related_resource | str
 # body | dict
 
-klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body);
+klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body)
 ```
 
 
@@ -432,7 +432,7 @@ klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body);
 
 # id | str
 
-klaviyo_beta.Tags.delete_tag(id);
+klaviyo_beta.Tags.delete_tag(id)
 ```
 
 
@@ -445,7 +445,7 @@ klaviyo_beta.Tags.delete_tag(id);
 
 # id | str
 
-klaviyo_beta.Tags.delete_tag_group(id);
+klaviyo_beta.Tags.delete_tag_group(id)
 ```
 
 
@@ -460,7 +460,7 @@ klaviyo_beta.Tags.delete_tag_group(id);
 # related_resource | str
 # body | dict
 
-klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body);
+klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body)
 ```
 
 
@@ -477,7 +477,7 @@ klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body);
 
 # fields_tag | [str]
 
-klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag);
+klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag)
 ```
 
 
@@ -494,7 +494,7 @@ klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag);
 
 # fields_tag_group | [str]
 
-klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group);
+klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group)
 ```
 
 
@@ -508,7 +508,7 @@ klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group);
 # id | str
 # related_resource | str
 
-klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource);
+klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource)
 ```
 
 
@@ -525,7 +525,7 @@ klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource);
 # page_cursor | str
 # sort | str
 
-klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filter, page_cursor=page_cursor, sort=sort);
+klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filter, page_cursor=page_cursor, sort=sort)
 ```
 
 
@@ -539,7 +539,7 @@ klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filte
 # id | str
 # related_resource | str
 
-klaviyo_beta.Tags.get_tag_relationships(id, related_resource);
+klaviyo_beta.Tags.get_tag_relationships(id, related_resource)
 ```
 
 
@@ -556,7 +556,7 @@ klaviyo_beta.Tags.get_tag_relationships(id, related_resource);
 # page_cursor | str
 # sort | str
 
-klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=page_cursor, sort=sort);
+klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=page_cursor, sort=sort)
 ```
 
 
@@ -570,7 +570,7 @@ klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=pag
 # id | str
 # body | dict
 
-klaviyo_beta.Tags.update_tag(id, body);
+klaviyo_beta.Tags.update_tag(id, body)
 ```
 
 
@@ -584,7 +584,7 @@ klaviyo_beta.Tags.update_tag(id, body);
 # id | str
 # body | dict
 
-klaviyo_beta.Tags.update_tag_group(id, body);
+klaviyo_beta.Tags.update_tag_group(id, body)
 ```
 
 
