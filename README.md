@@ -1,11 +1,11 @@
 # Python SDK for Klaviyo's Beta API
 
-- SDK version: 1.0.0
-- API revision: 2022-11-14.pre
+- SDK version: 2.0.0
+- API revision: 2022-12-15.pre
 
 ## Helpful Resources
 
-- [Beta API Reference](https://developers.klaviyo.com/en/v2022-11-14.pre/reference)
+- [Beta API Reference](https://developers.klaviyo.com/en/v2022-12-15.pre/reference)
 - [Latest API Guides](https://developers.klaviyo.com/en/docs)
 - [Postman Workspace](https://www.postman.com/klaviyo/workspace/klaviyo-developers)
 - [Interactive Guide (Jupyter Notebook)](https://github.com/klaviyo-labs/klaviyo-api-guides)
@@ -24,7 +24,7 @@ This SDK is organized into the following resources:
 
 
 
-- Data_Privacy
+- Campaigns
 
 
 
@@ -111,7 +111,7 @@ An `ApiException` consists of the following attributes:
 ## Important Notes
 
 - The main difference between this SDK and the language-agnostic API Docs that the below endpoints link to is that this SDK automatically adds the `revision` header corresponding to the SDK version.
-- Organization: Resource groups and operation_ids are listed below in alphabetical order, first by Resource name, then by **OpenAPI Summary**. Operation summaries are those listed in the right side bar of the [API Reference](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_events).
+- Organization: Resource groups and operation_ids are listed below in alphabetical order, first by Resource name, then by **OpenAPI Summary**. Operation summaries are those listed in the right side bar of the [API Reference](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_events).
 - For example values / data types, as well as whether parameters are required/optional, please reference the corresponding API Reference link.
 - Some keyword args may potentially be required for the API call to succeed, the linked API docs are the source of truth regarding which keyword params are required.
 - JSON payloads should be passed in as native python dictionaries.
@@ -123,16 +123,195 @@ An `ApiException` consists of the following attributes:
 
 
 
-## Data_Privacy
+## Campaigns
 
-#### [Create Data Privacy Deletion Job](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_data_privacy_deletion_job)
+#### [Create Campaign](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign)
 
 ```python
 ## Positional Arguments
 
 # body | dict
 
-klaviyo_beta.Data_Privacy.create_data_privacy_deletion_job(body);
+klaviyo_beta.Campaigns.create_campaign(body);
+```
+
+
+
+
+#### [Create Campaign Create Clone](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_create_clone)
+
+```python
+## Positional Arguments
+
+# body | dict
+
+klaviyo_beta.Campaigns.create_campaign_create_clone(body);
+```
+
+
+
+
+#### [Create Campaign Message Assign Template](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_message_assign_template)
+
+```python
+## Positional Arguments
+
+# body | dict
+
+klaviyo_beta.Campaigns.create_campaign_message_assign_template(body);
+```
+
+
+
+
+#### [Create Campaign Send Job](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_send_job)
+
+```python
+## Positional Arguments
+
+# body | dict
+
+klaviyo_beta.Campaigns.create_campaign_send_job(body);
+```
+
+
+
+
+#### [Delete Campaign](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/delete_campaign)
+
+```python
+## Positional Arguments
+
+# id | str
+
+klaviyo_beta.Campaigns.delete_campaign(id);
+```
+
+
+
+
+#### [Get Campaign](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign)
+
+```python
+## Positional Arguments
+
+# id | str
+
+## Keyword Arguments
+
+# fields_campaign | [str]
+# fields_tag | [str]
+# include | [str]
+
+klaviyo_beta.Campaigns.get_campaign(id, fields_campaign=fields_campaign, fields_tag=fields_tag, include=include);
+```
+
+
+
+
+#### [Get Campaign Message](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign_message)
+
+```python
+## Positional Arguments
+
+# id | str
+
+## Keyword Arguments
+
+# fields_campaign_message | [str]
+
+klaviyo_beta.Campaigns.get_campaign_message(id, fields_campaign_message=fields_campaign_message);
+```
+
+
+
+
+#### [Get Campaign Relationships](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign_relationships)
+
+```python
+## Positional Arguments
+
+# id | str
+# related_resource | str
+
+klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource);
+```
+
+
+
+
+#### [Get Campaign Send Job](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign_send_job)
+
+```python
+## Positional Arguments
+
+# id | str
+
+## Keyword Arguments
+
+# fields_campaign_send_job | [str]
+
+klaviyo_beta.Campaigns.get_campaign_send_job(id, fields_campaign_send_job=fields_campaign_send_job);
+```
+
+
+
+
+#### [Get Campaigns](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaigns)
+
+```python
+
+## Keyword Arguments
+
+# fields_campaign | [str]
+# fields_tag | [str]
+# filter | str
+# include | [str]
+# sort | str
+
+klaviyo_beta.Campaigns.get_campaigns(fields_campaign=fields_campaign, fields_tag=fields_tag, filter=filter, include=include, sort=sort);
+```
+
+
+
+
+#### [Update Campaign](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/update_campaign)
+
+```python
+## Positional Arguments
+
+# id | str
+# body | dict
+
+klaviyo_beta.Campaigns.update_campaign(id, body);
+```
+
+
+
+
+#### [Update Campaign Message](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/update_campaign_message)
+
+```python
+## Positional Arguments
+
+# id | str
+# body | dict
+
+klaviyo_beta.Campaigns.update_campaign_message(id, body);
+```
+
+
+
+
+#### [Update Campaign Send Job](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/update_campaign_send_job)
+
+```python
+## Positional Arguments
+
+# id | str
+# body | dict
+
+klaviyo_beta.Campaigns.update_campaign_send_job(id, body);
 ```
 
 
@@ -142,7 +321,7 @@ klaviyo_beta.Data_Privacy.create_data_privacy_deletion_job(body);
 
 ## Flows
 
-#### [Get Flow Tags](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_flow_tags)
+#### [Get Flow Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_flow_tags)
 
 ```python
 ## Positional Arguments
@@ -163,7 +342,7 @@ klaviyo_beta.Flows.get_flow_tags(flow_id, fields_tag=fields_tag);
 
 ## Lists
 
-#### [Get List Tags](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_list_tags)
+#### [Get List Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_list_tags)
 
 ```python
 ## Positional Arguments
@@ -184,7 +363,7 @@ klaviyo_beta.Lists.get_list_tags(list_id, fields_tag=fields_tag);
 
 ## Segments
 
-#### [Get Segment Tags](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_segment_tags)
+#### [Get Segment Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_segment_tags)
 
 ```python
 ## Positional Arguments
@@ -205,7 +384,7 @@ klaviyo_beta.Segments.get_segment_tags(segment_id, fields_tag=fields_tag);
 
 ## Tags
 
-#### [Create Tag](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_tag)
+#### [Create Tag](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_tag)
 
 ```python
 ## Positional Arguments
@@ -218,7 +397,7 @@ klaviyo_beta.Tags.create_tag(body);
 
 
 
-#### [Create Tag Group](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_tag_group)
+#### [Create Tag Group](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_tag_group)
 
 ```python
 ## Positional Arguments
@@ -231,7 +410,7 @@ klaviyo_beta.Tags.create_tag_group(body);
 
 
 
-#### [Create Tag Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_tag_relationships)
+#### [Create Tag Relationships](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_tag_relationships)
 
 ```python
 ## Positional Arguments
@@ -246,7 +425,7 @@ klaviyo_beta.Tags.create_tag_relationships(id, related_resource, body);
 
 
 
-#### [Delete Tag](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/delete_tag)
+#### [Delete Tag](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/delete_tag)
 
 ```python
 ## Positional Arguments
@@ -259,7 +438,7 @@ klaviyo_beta.Tags.delete_tag(id);
 
 
 
-#### [Delete Tag Group](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/delete_tag_group)
+#### [Delete Tag Group](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/delete_tag_group)
 
 ```python
 ## Positional Arguments
@@ -272,7 +451,7 @@ klaviyo_beta.Tags.delete_tag_group(id);
 
 
 
-#### [Delete Tag Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/delete_tag_relationships)
+#### [Delete Tag Relationships](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/delete_tag_relationships)
 
 ```python
 ## Positional Arguments
@@ -287,7 +466,7 @@ klaviyo_beta.Tags.delete_tag_relationships(id, related_resource, body);
 
 
 
-#### [Get Tag](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tag)
+#### [Get Tag](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tag)
 
 ```python
 ## Positional Arguments
@@ -304,7 +483,7 @@ klaviyo_beta.Tags.get_tag(id, fields_tag=fields_tag);
 
 
 
-#### [Get Tag Group](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tag_group)
+#### [Get Tag Group](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tag_group)
 
 ```python
 ## Positional Arguments
@@ -321,7 +500,7 @@ klaviyo_beta.Tags.get_tag_group(id, fields_tag_group=fields_tag_group);
 
 
 
-#### [Get Tag Group Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tag_group_relationships)
+#### [Get Tag Group Relationships](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tag_group_relationships)
 
 ```python
 ## Positional Arguments
@@ -335,7 +514,7 @@ klaviyo_beta.Tags.get_tag_group_relationships(id, related_resource);
 
 
 
-#### [Get Tag Groups](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tag_groups)
+#### [Get Tag Groups](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tag_groups)
 
 ```python
 
@@ -352,7 +531,7 @@ klaviyo_beta.Tags.get_tag_groups(fields_tag_group=fields_tag_group, filter=filte
 
 
 
-#### [Get Tag Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tag_relationships)
+#### [Get Tag Relationships](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tag_relationships)
 
 ```python
 ## Positional Arguments
@@ -366,7 +545,7 @@ klaviyo_beta.Tags.get_tag_relationships(id, related_resource);
 
 
 
-#### [Get Tags](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_tags)
+#### [Get Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_tags)
 
 ```python
 
@@ -383,7 +562,7 @@ klaviyo_beta.Tags.get_tags(fields_tag=fields_tag, filter=filter, page_cursor=pag
 
 
 
-#### [Update Tag](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/update_tag)
+#### [Update Tag](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/update_tag)
 
 ```python
 ## Positional Arguments
@@ -397,7 +576,7 @@ klaviyo_beta.Tags.update_tag(id, body);
 
 
 
-#### [Update Tag Group](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/update_tag_group)
+#### [Update Tag Group](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/update_tag_group)
 
 ```python
 ## Positional Arguments
