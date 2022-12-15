@@ -1,5 +1,7 @@
 # Changelog
 
+NOTE: For more granular API-specific changes, please see our [API Changelog](https://developers.klaviyo.com/en/docs/changelog_)
+
 ## 1.0.0
 
   * Initial release
@@ -12,3 +14,8 @@
     - client name: `KlaviyoAPI` → `KlaviyoAPIBeta`
     - Client variable name in readme examples: `klaviyo` → `klaviyo_beta`
   - New resources and endpoints: see [API Changelog](https://developers.klaviyo.com/en/docs/changelog_) for full details
+
+## 2.0.0
+
+  - Added Campaigns endpoints
+  - Removed Data Privacy (as it has been moved to General Availability)
