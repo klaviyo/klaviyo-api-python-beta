@@ -121,26 +121,6 @@ An `ApiException` consists of the following attributes:
 
 
 
-
-
-## Campaigns
-
-#### [Get Campaign Relationships](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/get_campaign_relationships)
-
-```python
-## Positional Arguments
-
-# id | str
-# related_resource | str
-
-klaviyo_beta.Campaigns.get_campaign_relationships(id, related_resource)
-```
-
-
-
-
-
-
 ## Data_Privacy
 
 #### [Create Data Privacy Deletion Job](https://developers.klaviyo.com/en/v2022-11-14.pre/reference/create_data_privacy_deletion_job)
