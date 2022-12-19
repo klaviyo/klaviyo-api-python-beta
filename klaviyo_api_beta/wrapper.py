@@ -6,6 +6,7 @@ import openapi_client
 import klaviyo_api_beta.custom_retry as custom_retry
 from dataclasses import dataclass
 from typing import Callable, ClassVar
+from openapi_client.api import campaigns_api
 from openapi_client.api import data_privacy_api
 from openapi_client.api import flows_api
 from openapi_client.api import lists_api
@@ -21,7 +22,7 @@ class KlaviyoAPIBeta:
     max_retries: int = 3
     test_host: str = ''
 
-    _REVISION = "2022-11-14.pre"
+    _REVISION = "2022-12-15.pre"
 
     _STATUS_CODE_TOO_MANY_REQUESTS = 429
     _STATUS_CODE_SERVICE_UNAVAILABLE = 503
@@ -35,7 +36,6 @@ class KlaviyoAPIBeta:
         _STATUS_CODE_A_TIMEOUT_OCCURED
         }
 
-    _CURSOR_LENGTH = 44
     _CURSOR_SEARCH_TOKENS = ['page%5Bcursor%5D','page[cursor]']
 
     def __post_init__(self):
@@ -65,11 +65,31 @@ class KlaviyoAPIBeta:
         )
 
         
+        ## Adding Campaigns to Client
+        self.Campaigns=campaigns_api.CampaignsApi(self.api_client)
+        
+        ## Applying tenacity retry decorator to each endpoint in Campaigns
+        self.Campaigns.assign_campaign_message_template=self._page_cursor_update(self.retry_logic(self.Campaigns.assign_campaign_message_template))
+        self.Campaigns.create_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign))
+        self.Campaigns.create_campaign_clone=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_clone))
+        self.Campaigns.create_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_send_job))
+        self.Campaigns.delete_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.delete_campaign))
+        self.Campaigns.get_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign))
+        self.Campaigns.get_campaign_message=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_message))
+        self.Campaigns.get_campaign_relationships=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_relationships))
+        self.Campaigns.get_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_send_job))
+        self.Campaigns.get_campaign_tags=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_tags))
+        self.Campaigns.get_campaigns=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaigns))
+        self.Campaigns.update_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign))
+        self.Campaigns.update_campaign_message=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign_message))
+        self.Campaigns.update_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign_send_job))
+        
+        
         ## Adding Data_Privacy to Client
         self.Data_Privacy=data_privacy_api.DataPrivacyApi(self.api_client)
         
         ## Applying tenacity retry decorator to each endpoint in Data_Privacy
-        self.Data_Privacy.create_data_privacy_deletion_job=self._page_cursor_update(self.retry_logic(self.Data_Privacy.create_data_privacy_deletion_job))
+        self.Data_Privacy.request_profile_deletion=self._page_cursor_update(self.retry_logic(self.Data_Privacy.request_profile_deletion))
         
         
         ## Adding Flows to Client
@@ -118,7 +138,7 @@ class KlaviyoAPIBeta:
     def _page_cursor_update(cls, func: Callable, *args, **kwargs) -> Callable: 
         def _wrapped_func(*args, **kwargs):
             if 'page_cursor' in kwargs:
-                page_cursor = kwargs['page_cursor']
+                page_cursor = kwargs['page_cursor']+'&'
                 if page_cursor:
                     if isinstance(page_cursor,str):
                         if 'https://' in page_cursor:
@@ -131,7 +151,7 @@ class KlaviyoAPIBeta:
                                     break
                             if found_token:
                                 start = page_cursor.find(found_token)+len(found_token)+1
-                                page_cursor = page_cursor[start:start+cls._CURSOR_LENGTH]
-                                kwargs['page_cursor'] = page_cursor
+                                end = page_cursor[start:].find('&')
+                                kwargs['page_cursor'] = page_cursor[start:start+end]
             return func(*args,**kwargs)
         return _wrapped_func
