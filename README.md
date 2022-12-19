@@ -1,6 +1,6 @@
 # Python SDK for Klaviyo's Beta API
 
-- SDK version: 2.0.0
+- SDK version: 1.1.0
 - API revision: 2022-12-15.pre
 
 ## Helpful Resources
