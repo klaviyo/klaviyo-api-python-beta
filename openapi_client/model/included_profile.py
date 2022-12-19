@@ -31,10 +31,10 @@ from openapi_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from openapi_client.model.included_profiles_attributes import IncludedProfilesAttributes
-    from openapi_client.model.included_variants_links import IncludedVariantsLinks
-    globals()['IncludedProfilesAttributes'] = IncludedProfilesAttributes
-    globals()['IncludedVariantsLinks'] = IncludedVariantsLinks
+    from openapi_client.model.included_profile_attributes import IncludedProfileAttributes
+    from openapi_client.model.included_tags_links import IncludedTagsLinks
+    globals()['IncludedProfileAttributes'] = IncludedProfileAttributes
+    globals()['IncludedTagsLinks'] = IncludedTagsLinks
 
 
 class IncludedProfile(ModelNormal):
@@ -95,8 +95,8 @@ class IncludedProfile(ModelNormal):
         return {
             'type': (str,),  # noqa: E501
             'id': (str,),  # noqa: E501
-            'attributes': (IncludedProfilesAttributes,),  # noqa: E501
-            'links': (IncludedVariantsLinks,),  # noqa: E501
+            'attributes': (IncludedProfileAttributes,),  # noqa: E501
+            'links': (IncludedTagsLinks,),  # noqa: E501
         }
 
     @cached_property
@@ -123,8 +123,8 @@ class IncludedProfile(ModelNormal):
 
         Args:
             id (str):
-            attributes (IncludedProfilesAttributes):
-            links (IncludedVariantsLinks):
+            attributes (IncludedProfileAttributes):
+            links (IncludedTagsLinks):
 
         Keyword Args:
             type (str): defaults to "profile", must be one of ["profile", ]  # noqa: E501
@@ -219,8 +219,8 @@ class IncludedProfile(ModelNormal):
 
         Args:
             id (str):
-            attributes (IncludedProfilesAttributes):
-            links (IncludedVariantsLinks):
+            attributes (IncludedProfileAttributes):
+            links (IncludedTagsLinks):
 
         Keyword Args:
             type (str): defaults to "profile", must be one of ["profile", ]  # noqa: E501

@@ -28,6 +28,10 @@ This SDK is organized into the following resources:
 
 
 
+- Data_Privacy
+
+
+
 - Flows
 
 
@@ -257,6 +261,23 @@ klaviyo_beta.Campaigns.get_campaign_send_job(id, fields_campaign_send_job=fields
 
 
 
+#### [Get Campaign Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign_tags)
+
+```python
+## Positional Arguments
+
+# campaign_id | str
+
+## Keyword Arguments
+
+# fields_tag | [str]
+
+klaviyo_beta.Campaigns.get_campaign_tags(campaign_id, fields_tag=fields_tag)
+```
+
+
+
+
 #### [Get Campaigns](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaigns)
 
 ```python
@@ -312,6 +333,23 @@ klaviyo_beta.Campaigns.update_campaign_message(id, body)
 # body | dict
 
 klaviyo_beta.Campaigns.update_campaign_send_job(id, body)
+```
+
+
+
+
+
+
+## Data_Privacy
+
+#### [Request Profile Deletion](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/request_profile_deletion)
+
+```python
+## Positional Arguments
+
+# body | dict
+
+klaviyo_beta.Data_Privacy.request_profile_deletion(body)
 ```
 
 

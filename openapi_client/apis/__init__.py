@@ -15,6 +15,7 @@
 
 # Import APIs into API package:
 from openapi_client.api.campaigns_api import CampaignsApi
+from openapi_client.api.data_privacy_api import DataPrivacyApi
 from openapi_client.api.flows_api import FlowsApi
 from openapi_client.api.lists_api import ListsApi
 from openapi_client.api.segments_api import SegmentsApi

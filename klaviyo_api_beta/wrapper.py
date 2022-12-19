@@ -7,6 +7,7 @@ import klaviyo_api_beta.custom_retry as custom_retry
 from dataclasses import dataclass
 from typing import Callable, ClassVar
 from openapi_client.api import campaigns_api
+from openapi_client.api import data_privacy_api
 from openapi_client.api import flows_api
 from openapi_client.api import lists_api
 from openapi_client.api import segments_api
@@ -77,10 +78,18 @@ class KlaviyoAPIBeta:
         self.Campaigns.get_campaign_message=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_message))
         self.Campaigns.get_campaign_relationships=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_relationships))
         self.Campaigns.get_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_send_job))
+        self.Campaigns.get_campaign_tags=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign_tags))
         self.Campaigns.get_campaigns=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaigns))
         self.Campaigns.update_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign))
         self.Campaigns.update_campaign_message=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign_message))
         self.Campaigns.update_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.update_campaign_send_job))
+        
+        
+        ## Adding Data_Privacy to Client
+        self.Data_Privacy=data_privacy_api.DataPrivacyApi(self.api_client)
+        
+        ## Applying tenacity retry decorator to each endpoint in Data_Privacy
+        self.Data_Privacy.request_profile_deletion=self._page_cursor_update(self.retry_logic(self.Data_Privacy.request_profile_deletion))
         
         
         ## Adding Flows to Client

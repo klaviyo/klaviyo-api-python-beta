@@ -31,8 +31,8 @@ from openapi_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from openapi_client.model.list_create_query_as_sub_resource_attributes import ListCreateQueryAsSubResourceAttributes
-    globals()['ListCreateQueryAsSubResourceAttributes'] = ListCreateQueryAsSubResourceAttributes
+    from openapi_client.model.tag_update_query_as_sub_resource_attributes import TagUpdateQueryAsSubResourceAttributes
+    globals()['TagUpdateQueryAsSubResourceAttributes'] = TagUpdateQueryAsSubResourceAttributes
 
 
 class TagUpdateQueryAsSubResource(ModelNormal):
@@ -93,7 +93,7 @@ class TagUpdateQueryAsSubResource(ModelNormal):
         return {
             'type': (str,),  # noqa: E501
             'id': (str,),  # noqa: E501
-            'attributes': (ListCreateQueryAsSubResourceAttributes,),  # noqa: E501
+            'attributes': (TagUpdateQueryAsSubResourceAttributes,),  # noqa: E501
         }
 
     @cached_property
@@ -119,7 +119,7 @@ class TagUpdateQueryAsSubResource(ModelNormal):
 
         Args:
             id (str):
-            attributes (ListCreateQueryAsSubResourceAttributes):
+            attributes (TagUpdateQueryAsSubResourceAttributes):
 
         Keyword Args:
             type (str): defaults to "tag", must be one of ["tag", ]  # noqa: E501
@@ -213,7 +213,7 @@ class TagUpdateQueryAsSubResource(ModelNormal):
 
         Args:
             id (str):
-            attributes (ListCreateQueryAsSubResourceAttributes):
+            attributes (TagUpdateQueryAsSubResourceAttributes):
 
         Keyword Args:
             type (str): defaults to "tag", must be one of ["tag", ]  # noqa: E501
