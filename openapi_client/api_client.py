@@ -803,10 +803,10 @@ class Endpoint(object):
         Example:
 
         api_instance = CampaignsApi()
-        api_instance.create_campaign  # this is an instance of the class Endpoint
-        api_instance.create_campaign()  # this invokes api_instance.create_campaign.__call__()
+        api_instance.assign_campaign_message_template  # this is an instance of the class Endpoint
+        api_instance.assign_campaign_message_template()  # this invokes api_instance.assign_campaign_message_template.__call__()
         which then invokes the callable functions stored in that endpoint at
-        api_instance.create_campaign.callable or self.callable in this class
+        api_instance.assign_campaign_message_template.callable or self.callable in this class
 
         """
         return self.callable(self, *args, **kwargs)

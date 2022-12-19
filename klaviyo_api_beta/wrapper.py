@@ -69,9 +69,9 @@ class KlaviyoAPIBeta:
         self.Campaigns=campaigns_api.CampaignsApi(self.api_client)
         
         ## Applying tenacity retry decorator to each endpoint in Campaigns
+        self.Campaigns.assign_campaign_message_template=self._page_cursor_update(self.retry_logic(self.Campaigns.assign_campaign_message_template))
         self.Campaigns.create_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign))
-        self.Campaigns.create_campaign_create_clone=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_create_clone))
-        self.Campaigns.create_campaign_message_assign_template=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_message_assign_template))
+        self.Campaigns.create_campaign_clone=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_clone))
         self.Campaigns.create_campaign_send_job=self._page_cursor_update(self.retry_logic(self.Campaigns.create_campaign_send_job))
         self.Campaigns.delete_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.delete_campaign))
         self.Campaigns.get_campaign=self._page_cursor_update(self.retry_logic(self.Campaigns.get_campaign))

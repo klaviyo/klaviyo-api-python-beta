@@ -43,6 +43,58 @@ class CampaignsApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
+        self.assign_campaign_message_template_endpoint = _Endpoint(
+            settings={
+                'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
+                'auth': [
+                    'Klaviyo-API-Key'
+                ],
+                'endpoint_path': '/api/campaign-message-assign-templates/',
+                'operation_id': 'assign_campaign_message_template',
+                'http_method': 'POST',
+                'servers': None,
+            },
+            params_map={
+                'all': [
+                    'campaign_message_assign_template_query',
+                ],
+                'required': [
+                    'campaign_message_assign_template_query',
+                ],
+                'nullable': [
+                ],
+                'enum': [
+                ],
+                'validation': [
+                ]
+            },
+            root_map={
+                'validations': {
+                },
+                'allowed_values': {
+                },
+                'openapi_types': {
+                    'campaign_message_assign_template_query':
+                        (CampaignMessageAssignTemplateQuery,),
+                },
+                'attribute_map': {
+                },
+                'location_map': {
+                    'campaign_message_assign_template_query': 'body',
+                },
+                'collection_format_map': {
+                }
+            },
+            headers_map={
+                'accept': [
+                    'application/json'
+                ],
+                'content_type': [
+                    'application/json'
+                ]
+            },
+            api_client=api_client
+        )
         self.create_campaign_endpoint = _Endpoint(
             settings={
                 'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
@@ -95,14 +147,14 @@ class CampaignsApi(object):
             },
             api_client=api_client
         )
-        self.create_campaign_create_clone_endpoint = _Endpoint(
+        self.create_campaign_clone_endpoint = _Endpoint(
             settings={
                 'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
                 'auth': [
                     'Klaviyo-API-Key'
                 ],
                 'endpoint_path': '/api/campaign-create-clones/',
-                'operation_id': 'create_campaign_create_clone',
+                'operation_id': 'create_campaign_clone',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -133,58 +185,6 @@ class CampaignsApi(object):
                 },
                 'location_map': {
                     'campaign_clone_query': 'body',
-                },
-                'collection_format_map': {
-                }
-            },
-            headers_map={
-                'accept': [
-                    'application/json'
-                ],
-                'content_type': [
-                    'application/json'
-                ]
-            },
-            api_client=api_client
-        )
-        self.create_campaign_message_assign_template_endpoint = _Endpoint(
-            settings={
-                'response_type': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),
-                'auth': [
-                    'Klaviyo-API-Key'
-                ],
-                'endpoint_path': '/api/campaign-message-assign-templates/',
-                'operation_id': 'create_campaign_message_assign_template',
-                'http_method': 'POST',
-                'servers': None,
-            },
-            params_map={
-                'all': [
-                    'campaign_message_assign_template_query',
-                ],
-                'required': [
-                    'campaign_message_assign_template_query',
-                ],
-                'nullable': [
-                ],
-                'enum': [
-                ],
-                'validation': [
-                ]
-            },
-            root_map={
-                'validations': {
-                },
-                'allowed_values': {
-                },
-                'openapi_types': {
-                    'campaign_message_assign_template_query':
-                        (CampaignMessageAssignTemplateQuery,),
-                },
-                'attribute_map': {
-                },
-                'location_map': {
-                    'campaign_message_assign_template_query': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -973,6 +973,89 @@ class CampaignsApi(object):
             api_client=api_client
         )
 
+    def assign_campaign_message_template(
+        self,
+        campaign_message_assign_template_query,
+        **kwargs
+    ):
+        """Assign Campaign Message Template  # noqa: E501
+
+        Creates a non-reusable version of the template and assigns it to the message.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Campaigns Write`  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+
+        >>> thread = api.assign_campaign_message_template(campaign_message_assign_template_query, async_req=True)
+        >>> result = thread.get()
+
+        Args:
+            campaign_message_assign_template_query (CampaignMessageAssignTemplateQuery): Takes a reusable template, clones it, and assigns the non-reusable clone to the message.
+
+        Keyword Args:
+            _return_http_data_only (bool): response data without head status
+                code and headers. Default is True.
+            _preload_content (bool): if False, the urllib3.HTTPResponse object
+                will be returned without reading/decoding response data.
+                Default is True.
+            _request_timeout (int/float/tuple): timeout setting for this request. If
+                one number provided, it will be total request timeout. It can also
+                be a pair (tuple) of (connection, read) timeouts.
+                Default is None.
+            _check_input_type (bool): specifies if type checking
+                should be done one the data sent to the server.
+                Default is True.
+            _check_return_type (bool): specifies if type checking
+                should be done one the data received from the server.
+                Default is True.
+            _spec_property_naming (bool): True if the variable names in the input data
+                are serialized names, as specified in the OpenAPI document.
+                False if the variable names in the input data
+                are pythonic names, e.g. snake case (default)
+            _content_type (str/None): force body content-type.
+                Default is None and content-type will be predicted by allowed
+                content-types and body.
+            _host_index (int/None): specifies the index of the server
+                that we want to use.
+                Default is read from the configuration.
+            _request_auths (list): set to override the auth_settings for an a single
+                request; this effectively ignores the authentication
+                in the spec for a single request.
+                Default is None
+            async_req (bool): execute request asynchronously
+
+        Returns:
+            {str: (bool, date, datetime, dict, float, int, list, str, none_type)}
+                If the method is called asynchronously, returns the request
+                thread.
+        """
+        kwargs['async_req'] = kwargs.get(
+            'async_req', False
+        )
+        kwargs['_return_http_data_only'] = kwargs.get(
+            '_return_http_data_only', True
+        )
+        kwargs['_preload_content'] = kwargs.get(
+            '_preload_content', True
+        )
+        kwargs['_request_timeout'] = kwargs.get(
+            '_request_timeout', None
+        )
+        kwargs['_check_input_type'] = kwargs.get(
+            '_check_input_type', True
+        )
+        kwargs['_check_return_type'] = kwargs.get(
+            '_check_return_type', True
+        )
+        kwargs['_spec_property_naming'] = kwargs.get(
+            '_spec_property_naming', False
+        )
+        kwargs['_content_type'] = kwargs.get(
+            '_content_type')
+        kwargs['_host_index'] = kwargs.get('_host_index')
+        kwargs['_request_auths'] = kwargs.get('_request_auths', None)
+        kwargs['campaign_message_assign_template_query'] = \
+            campaign_message_assign_template_query
+        return self.assign_campaign_message_template_endpoint.call_with_http_info(**kwargs)
+
     def create_campaign(
         self,
         campaign_create_query,
@@ -1056,18 +1139,18 @@ class CampaignsApi(object):
             campaign_create_query
         return self.create_campaign_endpoint.call_with_http_info(**kwargs)
 
-    def create_campaign_create_clone(
+    def create_campaign_clone(
         self,
         campaign_clone_query,
         **kwargs
     ):
-        """Create Campaign Create Clone  # noqa: E501
+        """Create Campaign Clone  # noqa: E501
 
         Clones an existing campaign, returning a new campaign based on the original with a new ID and name.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Campaigns Write`  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.create_campaign_create_clone(campaign_clone_query, async_req=True)
+        >>> thread = api.create_campaign_clone(campaign_clone_query, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -1137,90 +1220,7 @@ class CampaignsApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['campaign_clone_query'] = \
             campaign_clone_query
-        return self.create_campaign_create_clone_endpoint.call_with_http_info(**kwargs)
-
-    def create_campaign_message_assign_template(
-        self,
-        campaign_message_assign_template_query,
-        **kwargs
-    ):
-        """Create Campaign Message Assign Template  # noqa: E501
-
-        Creates a non-reusable version of the template and assigns it to the message.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`  **Scopes:** `Campaigns Write`  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-
-        >>> thread = api.create_campaign_message_assign_template(campaign_message_assign_template_query, async_req=True)
-        >>> result = thread.get()
-
-        Args:
-            campaign_message_assign_template_query (CampaignMessageAssignTemplateQuery): Takes a reusable template, clones it, and assigns the non-reusable clone to the message.
-
-        Keyword Args:
-            _return_http_data_only (bool): response data without head status
-                code and headers. Default is True.
-            _preload_content (bool): if False, the urllib3.HTTPResponse object
-                will be returned without reading/decoding response data.
-                Default is True.
-            _request_timeout (int/float/tuple): timeout setting for this request. If
-                one number provided, it will be total request timeout. It can also
-                be a pair (tuple) of (connection, read) timeouts.
-                Default is None.
-            _check_input_type (bool): specifies if type checking
-                should be done one the data sent to the server.
-                Default is True.
-            _check_return_type (bool): specifies if type checking
-                should be done one the data received from the server.
-                Default is True.
-            _spec_property_naming (bool): True if the variable names in the input data
-                are serialized names, as specified in the OpenAPI document.
-                False if the variable names in the input data
-                are pythonic names, e.g. snake case (default)
-            _content_type (str/None): force body content-type.
-                Default is None and content-type will be predicted by allowed
-                content-types and body.
-            _host_index (int/None): specifies the index of the server
-                that we want to use.
-                Default is read from the configuration.
-            _request_auths (list): set to override the auth_settings for an a single
-                request; this effectively ignores the authentication
-                in the spec for a single request.
-                Default is None
-            async_req (bool): execute request asynchronously
-
-        Returns:
-            {str: (bool, date, datetime, dict, float, int, list, str, none_type)}
-                If the method is called asynchronously, returns the request
-                thread.
-        """
-        kwargs['async_req'] = kwargs.get(
-            'async_req', False
-        )
-        kwargs['_return_http_data_only'] = kwargs.get(
-            '_return_http_data_only', True
-        )
-        kwargs['_preload_content'] = kwargs.get(
-            '_preload_content', True
-        )
-        kwargs['_request_timeout'] = kwargs.get(
-            '_request_timeout', None
-        )
-        kwargs['_check_input_type'] = kwargs.get(
-            '_check_input_type', True
-        )
-        kwargs['_check_return_type'] = kwargs.get(
-            '_check_return_type', True
-        )
-        kwargs['_spec_property_naming'] = kwargs.get(
-            '_spec_property_naming', False
-        )
-        kwargs['_content_type'] = kwargs.get(
-            '_content_type')
-        kwargs['_host_index'] = kwargs.get('_host_index')
-        kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        kwargs['campaign_message_assign_template_query'] = \
-            campaign_message_assign_template_query
-        return self.create_campaign_message_assign_template_endpoint.call_with_http_info(**kwargs)
+        return self.create_campaign_clone_endpoint.call_with_http_info(**kwargs)
 
     def create_campaign_send_job(
         self,
