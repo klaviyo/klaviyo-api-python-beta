@@ -1,6 +1,6 @@
 # Python SDK for Klaviyo's Beta API
 
-- SDK version: 1.1.0
+- SDK version: 1.1.1
 - API revision: 2022-12-15.pre
 
 ## Helpful Resources
@@ -624,7 +624,6 @@ klaviyo_beta.Tags.update_tag(id, body)
 
 klaviyo_beta.Tags.update_tag_group(id, body)
 ```
-
 
 
 
